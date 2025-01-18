@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "unipro",
+    "builds": [
+        { "src": "/public/index.php", "use": "vercel-php@0.5.2" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "/public/index.php" }
+    ],
+    "env": {
+        "APP_NAME": "UniPro",
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://pricklypairstudios.vercel.app"
+    }
+}
